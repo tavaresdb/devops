@@ -1,0 +1,1 @@
+Crie um docker compose com o banco de dados PostgreSQL e a ferramenta de interface pgAdmin.

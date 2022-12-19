@@ -1,0 +1,1 @@
+O objetivo agora é subir uma solução já existente no mercado: uma solução Wordpress em containers!!! Crie o seu docker compose utilizando a imagem oficial do Wordpress.
