@@ -1,0 +1,30 @@
+version: '3.1'
+
+volumes:
+  vol_db:
+  vol_app:
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    volumes:
+     - vol_db:/data/db5
+    environment:
+      MYSQL_USER: "myuser"
+      MYSQL_PASSWORD: "MySQL2023!"
+      MYSQL_DATABASE: "tavaresdb"
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+
+  app:
+    image: wordpress
+    restart: always
+    ports:
+     - 8080:80
+    volumes:
+     - vol_app:/app
+    environment:
+      WORDPRESS_DB_HOST: "db"
+      WORDPRESS_DB_USER: "myuser"
+      WORDPRESS_DB_PASSWORD: "MySQL2023!"
+      WORDPRESS_DB_NAME: "tavaresdb"

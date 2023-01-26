@@ -1,0 +1,26 @@
+version: '3.1'
+
+volumes:
+  vol_pg:
+
+services:
+  postgres:
+    image: postgres:15.1
+    restart: always
+    ports:
+     - 5432:5432
+    volumes:
+     - vol_pg:/data/db3
+    environment:
+      POSTGRES_USER: "pguser"
+      POSTGRES_PASSWORD: "Postgres2023!"
+      POSTGRES_DB: "tavaresdb"
+      POSTGRES_INITDB_ARGS: "--data-checksums"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+     - 6543:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "tavares90.joao@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "PgAdmin2023!"
