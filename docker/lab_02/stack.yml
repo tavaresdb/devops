@@ -1,14 +1,14 @@
 version: '3.1'
 
 volumes:
-  vol_mariadb:
+  vol_maria:
 
 services:
   db:
     image: mariadb:10.6
     restart: always
     volumes:
-     - vol_mariadb:/data/db2
+     - vol_maria:/data/db2
     environment:
       MYSQL_ROOT_PASSWORD: notSecureChangeMe
 
