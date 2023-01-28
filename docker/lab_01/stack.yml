@@ -5,12 +5,12 @@ volumes:
 
 services:
   mongo:
-    image: mongo
+    image: mongo:6.0.4
     restart: always
     volumes:
      - vol_mongo:/data/db1
     environment:
-      MONGO_INITDB_ROOT_USER: mongouser
+      MONGO_INITDB_ROOT_USERNAME: mongouser
       MONGO_INITDB_ROOT_PASSWORD: mongopasswd
 
   mongo-express:
