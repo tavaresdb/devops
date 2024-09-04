@@ -134,8 +134,12 @@ docker container run -it -v "template_voldocker:/app" ubuntu /bin/bash
 * tmpfs: Armazenamento em memória.
 
 ### Opções
--d Executa o container em background
--i Executa o container em modo interativo
--t Habilita TTY
--p Realiza o bind entre a porta da máquina local e a porta no container
--e Define variável de ambiente
+- -d Executa o container em background
+
+- -i Executa o container em modo interativo
+
+- -t Habilita TTY
+
+- -p Realiza o bind entre a porta da máquina local e a porta no container
+
+- -e Define variável de ambiente

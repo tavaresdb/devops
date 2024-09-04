@@ -9,10 +9,11 @@ stat --format '%a' content.txt
 ## Localiza e remove arquivos criados há mais de 180 dias
 ```bash
 find /tmp/backup -mtime +180 -type f -exec ls '{}' \;
-find /tmp/backup -mtime +180 -type f -exec rm -fv '{}' \;4
+find /tmp/backup -mtime +180 -type f -exec rm -fv '{}' \;
 ```
 
 ## Persistindo variáveis de ambiente
+```bash
 mkdir infraclass
 touch infraclass/config
 echo INFRACLASS_REGION=[YOUR_REGION] >> ~/infraclass/config
@@ -24,3 +25,4 @@ vi .profile
 ..
 source infraclass/config
 :wq
+```
