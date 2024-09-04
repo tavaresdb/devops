@@ -20,5 +20,5 @@ services:
     ports:
      - 6543:80
     environment:
-      PGADMIN_DEFAULT_EMAIL: "tavares90.joao@gmail.com"
+      PGADMIN_DEFAULT_EMAIL: "email@domain.com"
       PGADMIN_DEFAULT_PASSWORD: "PgAdmin2023!"
