@@ -1,5 +1,16 @@
 # Comandos
 
+## Conexão via SSH
+```bash
+ssh user@hostname.domain.com -i ~/.ssh/private_key
+```
+
+## Transferência de arquivos via SCP
+```bash
+scp -i ~/.ssh/private_key user@hostname.domain.com:/home/user/archive.txt .
+scp -i ~/.ssh/private_key archive.txt user@other-hostname.domain.com:/home/user/
+```
+
 ## Identifica as permissões concedidas ao arquivo ou pasta
 ```bash
 stat --format '%a' dir/
@@ -25,4 +36,9 @@ vi .profile
 ..
 source infraclass/config
 :wq
+```
+
+# Visualiza o conteúdo do arquivo de certificado x509 em um formato legível
+```bash
+openssl x509 -in server.pem -text
 ```
