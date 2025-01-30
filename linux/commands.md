@@ -11,6 +11,16 @@ scp -i ~/.ssh/private_key user@hostname.domain.com:/home/user/archive.txt .
 scp -i ~/.ssh/private_key archive.txt user@other-hostname.domain.com:/home/user/
 ```
 
+## Compactação de arquivo
+```bash
+tar -czvf archive.tar.gz archive.txt
+```
+
+## Descompactação de arquivo
+```bash
+tar -xzvf archive.tar.gz
+```
+
 ## Identifica as permissões concedidas ao arquivo ou pasta
 ```bash
 stat --format '%a' dir/
