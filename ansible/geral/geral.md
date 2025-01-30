@@ -3,7 +3,7 @@ O Ansible é uma ferramenta amplamente utilizada para gerenciamento de configura
 
 A seguir destaco alguns componentes do Ansible:
 
-[img/architecture.png]
+![](img/architecture.png)
 
 _Fonte da imagem: [Ansible - Implementando sua infraestrutura como código](https://www.alura.com.br/curso-online-ansible-implementando-infraestrutura-codigo)_
 
